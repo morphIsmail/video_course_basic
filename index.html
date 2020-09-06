@@ -8,75 +8,150 @@
     <title>Видео курс по HTML + CSS</title>
 </head>
 <body>
-    <div class="container">
-        <div class="item item1">
-            <h1>Видео курс по вёрстке для начинающих</h1>
-            <h2>Описание видео курса</h2>
-            <p>Данный видео курс подойдет начинающим верстальщикам. Если вы хотите изучать создание сайтов и зарабатывать с помощью этого и не знали с чего начать, то этот курс именно для вас. Так же он подойдет вам если вы уже пытались создавать сайты, но вам кажется, что ваши успехи незначительны. Если вы от 1 до 3 месяцев пытаетесь изучать HTML и CSS, но до сих пор не чувствуете уверенности в себе, то вы так же почерпнете очень много полезно из этого видео курса и после завершения обучения сможете самостоятельно начать верстать сайты.</p>
-            <h3>Преимущества:</h3>
-            <ol>
-                <li>Структурированный материал собранный в одном месте</li>
-                <li>Не высокая цена</li>
-                <li>Актуальность в 2020</li>
-                <li>Нужные современные знания, а не старые мало используемые</li>
-                <li>Практические уроки</li>
-                <li>Домашние задания</li>
-                <li>32 видео в курсе</li>
-                <li>Максимальная адаптация для просмотра со смартфона</li>                
-                <li>3 дополнительных справочника</li>
-                <li>Ссылки на полезные сервисы и продвинутые бесплатные видео уроки</li>
-                <li>Отсутствует реклама</li>
-            </ol>
-        </div> 
-        <div class="item item2">
-            <h2>Процесс обучения</h2>
-            <img src="img/telegram.png" width="150" height="150">
-            <p>После покупки видео курс по HTML и CSS будет доступен вам в специальном Телеграм канале. Как только вы перейдете в канал с видео курсом вам нужно перейти в самый верх и начать изучать весь материал в том порядке в котором он там расположен.</p>
-            <p>Так же вы будете приглашены в Телеграм группу, где можно будет обсудить свой код с другими участниками.</p>
-            <p>Я старался делать видео таким образом, чтобы их можно было смотреть даже с мобильного устройства. Но рекомендую использовать Веб версию Телеграм или Desktop приложение. Вам будет намного удобней просматривать видео за своим компьютером или ноутбуком с большим монитором, и вы сможете практиковаться и закреплять изученный материал.</p>
-        </div>   
-        <div class="item item3">   
-            <h2>Что вы узнаете</h2>
-            <div class="box">
-                <img src="img/chrome.png" width="40" height="40">
-                <p>Базовые приемы работы с инструментами разработчика в браузере Google Chrome.</p>
-            </div>
-            <div class="box">
-                <img src="img/code.png" width="40" height="40">
-                <p>Как работать в редакторе кода VS Code.</p>
-            </div>
-            <div class="box">
-                <img src="img/emmet.png" width="40" height="40">
-                <p>Как писать код очень быстро с помощью плагина Emmet.</p>
-            </div>
-            <div class="box">
-                <img src="img/html.png" width="40" height="40">
-                <p>Более 30 HTML тегов. Как настроить путь к файлу стилей, скриптов или изображению. Как создавать таблицы и формы. Какие есть атрибуты у разных тегов. Способы работы с RGB цветом и специальными символами.</p>
-            </div>
-            <div class="box">
-                <img src="img/css.png" width="40" height="40">
-                <p>Более 25 CSS свойства. Основные селекторы для поиска элементов на HTML странице. Как работать с изображениями. Что такое блочная модель CSS. Какие есть псевдоклассы и псевдоэлементы. Основы CSS Flexbox. Как подключать шрифты локально. Каким образом создавать градиенты и изменять курсор мыши. Как подключить большой набор иконок к себе на сайт.</p> 
-            </div>
-            <div class="box">
-                <img src="img/photoshop.png" width="40" height="40">
-                <p>Как работать в Photoshop верстальщику.</p> 
+    <!-- Шапка -->
+    <div class="header">
+        <div class="container">
+            <h1>Видео курс по вёрстке для начинающих (HTML+CSS)</h1>
+            <div class="header__inner">
+                <div class="header__left">
+                    <p>Данный видео курс подойдет начинающим верстальщикам. Если вы хотите изучать создание сайтов и зарабатывать с помощью этого и не знали с чего начать, то этот курс именно для вас. </p>
+                    <p>Так же он подойдет вам если вы уже пытались создавать сайты, но вам кажется, что ваши успехи незначительны. Если вы от 1 до 3 месяцев пытаетесь изучать HTML и CSS, но до сих пор не чувствуете уверенности в себе, то вы так же почерпнете очень много полезно из этого видео курса и после завершения обучения сможете самостоятельно начать верстать сайты.</p> 
+                </div>
+                <div class="header__right">
+                    <video src="video/trailer.mp4" controls></video>
+                </div>  
+            </div>            
+        </div>
+    </div>
+    <!-- Описание -->
+    <div class="description">
+        <div class="container">
+            <h2>О курсе</h2>
+            <div class="description__cards">
+                <div class="description__item">
+                    <i class="description__icon fa fa-list-ol" aria-hidden="true"></i>
+                    <div class="description__text">
+                        Структурированный материал
+                    </div>
+                </div>
+                <div class="description__item">
+                    <i class="description__icon fa fa-rub" aria-hidden="true"></i>
+                    <div class="description__text">
+                        Символическая цена
+                    </div>
+                </div>
+                <div class="description__item">
+                    <i class="description__icon fa fa-bar-chart" aria-hidden="true"></i>
+                    <div class="description__text">
+                        Актуальность
+                    </div>
+                </div>
+                <div class="description__item">
+                    <i class="description__icon fa fa-code" aria-hidden="true"></i>
+                    <div class="description__text">
+                        Практические уроки и задания
+                    </div>
+                </div>
+                <div class="description__item">
+                    <i class="description__icon fa fa-file-video-o" aria-hidden="true"></i>
+                    <div class="description__text">
+                        32 видео в курсе
+                    </div>
+                </div>
+                <div class="description__item">
+                    <i class="description__icon fa fa-mobile" aria-hidden="true"></i>
+                    <div class="description__text">
+                        Просмотр со смартфона
+                    </div>
+                </div>
+                <div class="description__item">
+                    <i class="description__icon fa fa-question" aria-hidden="true"></i>
+                    <div class="description__text">
+                        Дополнительные материалы
+                    </div>
+                </div>
+                <div class="description__item">
+                    <i class="description__icon fa fa-thumbs-o-up" aria-hidden="true"></i>
+                    <div class="description__text">
+                        Отсутствует реклама
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="item item4">
-            <h2>Купить курс</h2>
-            <p>После того как вы нажмете на кнопку "Перевести", на следующей странице обязательно заполните все поля правильно. Номер телефона тот к которому у вас привязан аккаунт Телеграм, чтобы я смог отправить вам доступ к курсу. А Email и ФИО для возможности связаться с вами если вдруг возникнут какие-то сложности и решить все вопросы.</p>
-            <h3>Цена курса: <span class="del">800 р.</span> 500 р. в сентябре со скидкой!</h3>
-            <iframe src="https://money.yandex.ru/quickpay/shop-widget?writer=seller&targets=%D0%92%D0%B8%D0%B4%D0%B5%D0%BE%20%D0%BA%D1%83%D1%80%D1%81%20HTML%2BCSS&targets-hint=&default-sum=500&button-text=11&payment-type-choice=on&fio=on&phone=on&mail=on&hint=&successURL=https%3A%2F%2Fyoutube.com%2Fc%2FITDoctor&quickpay=shop&account=4100110583044988" width="100%" height="222" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
-            <div class="icons">
-                <a target="_blank" href="https://www.youtube.com/c/ITDoctor"><i class="fa fa-youtube"></i></a>
-                <a target="_blank" href="https://vk.com/morphop"><i class="fa fa-vk"></i></a>
-                <a target="_blank" href="https://vk.com/itdoctorstudio"><i class="fa fa-vk"></i></a>
-                <a target="_blank" href="https://instagram.com/ismail_asanovich/"><i class="fa fa-instagram"></i></a>
-                <a target="_blank" href="https://github.com/morphIsmail"><i class="fa fa-github"></i></a>
-                <a target="_blank" href="https://twitter.com/ITDoctor_morph"><i class="fa fa-twitter"></i></a>
+    </div>
+    <!-- Процесс обучения -->
+    <div class="learning">
+        <div class="container">
+            <h2>Процесс обучения</h2>
+            <div class="learning__inner">
+                <div class="learning__icon">
+                    <img src="img/Mockup.png" width="250" alt="">
+                    <!-- <i class="fa fa-telegram" aria-hidden="true"></i> -->
+                </div>
+                <div class="learning__text">
+                    <p>После покупки видео курс по HTML и CSS будет доступен вам в специальном Телеграм канале. Как только вы перейдете в канал с видео курсом вам нужно перейти в самый верх и начать изучать весь материал в том порядке, в котором он там расположен.</p>
+                    <p>Так же вы будете приглашены в Телеграм группу, где можно будет обсудить свой код с другими участниками.</p>
+                    <p>Я старался делать видео таким образом, чтобы их можно было смотреть даже с мобильного устройства. Но рекомендую использовать Веб версию Телеграм или Desktop приложение. Вам будет намного удобней просматривать видео за своим компьютером или ноутбуком с большим монитором, и вы сможете практиковаться и закреплять изученный материал.</p>
+                </div>
             </div>
-            <p>Оставляйте свой отзыв о курсе под видео анонсом на Youtube в комментариях, а также делитесь этим видео с друзьями.</p>
-            <a href="https://youtu.be/y6YFVA86MA4" class="btn">Оставить отзыв</a>
+        </div>
+    </div>
+    <!-- Что вы узнаете -->
+    <div class="about">
+        <div class="container">
+            <h2>Что вы узнаете</h2>
+            <div class="about__cards">
+                <div class="about__item">
+                    <i class="about__icon fa fa-chrome" aria-hidden="true"></i>
+                    <p class="about__text">Базовые приемы работы с инструментами разработчика в браузере Google Chrome.</p>
+                </div>
+                <div class="about__item">
+                    <i class="about__icon fa fa-wrench" aria-hidden="true"></i>
+                    <p class="about__text">Как работать в редакторе кода VS Code и писать код очень быстро с помощью плагина Emmet. Как работать в Photoshop верстальщику.</p> 
+                </div>
+                <div class="about__item">
+                    <i class="about__icon fa fa-html5" aria-hidden="true"></i>
+                    <p class="about__text">Более 30 HTML тегов. Как настроить путь к файлу стилей, скриптов или изображению. Как создавать таблицы и формы. Какие есть атрибуты у разных тегов. Способы работы с RGB цветом и специальными символами.</p>
+                </div>
+                <div class="about__item">
+                    <i class="about__icon fa fa-css3" aria-hidden="true"></i>
+                    <p class="about__text">Более 25 CSS свойства. Основные селекторы для поиска элементов на HTML странице. Как работать с изображениями. Что такое блочная модель CSS. Какие есть псевдоклассы и псевдоэлементы. Основы CSS Flexbox. Как подключать шрифты локально. Каким образом создавать градиенты и изменять курсор мыши. Как подключить большой набор иконок к себе на сайт.</p> 
+                </div>
+            </div>   
+        </div>
+    </div>
+    <!-- Купить -->
+    <div class="sale">
+        <div class="container">
+            <h2>Купить курс</h2>
+            <div class="sale__inner">
+                <div class="sale__text">
+                    <p>После того как вы нажмете на кнопку "Перевести", на следующей странице обязательно заполните все поля правильно. Номер телефона тот к которому у вас привязан аккаунт Телеграм, чтобы я смог отправить вам доступ к курсу. А Email и ФИО для возможности связаться с вами если вдруг возникнут какие-то сложности и решить все вопросы.</p>
+                    <p>Цена курса: <span class="del">800 р.</span> 500 р. в сентябре со скидкой!</p>
+                </div>
+                <div class="sale__form">
+                    <iframe src="https://money.yandex.ru/quickpay/shop-widget?writer=seller&targets=%D0%92%D0%B8%D0%B4%D0%B5%D0%BE%20%D0%BA%D1%83%D1%80%D1%81%20HTML%2BCSS&targets-hint=&default-sum=500&button-text=11&payment-type-choice=on&fio=on&phone=on&mail=on&hint=&successURL=https%3A%2F%2Fyoutube.com%2Fc%2FITDoctor&quickpay=shop&account=4100110583044988" width="100%" height="222" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+                </div>
+            </div>        
+        </div>
+    </div>
+    <!-- Подвал -->
+    <div class="footer">
+        <div class="container">
+            <h2>Отзывы</h2>
+            <div class="footer__iiner">
+                <div class="footer__text">
+                    <p>Прочитать отзывы о курсе или оставить свой отзыв можно под видео анонсом на <a target="_blank" href="https://youtu.be/y6YFVA86MA4">Youtube</a>, в комментариях.</p>
+                </div>
+                <div class="footer__icons">
+                    <a target="_blank" href="https://www.youtube.com/c/ITDoctor"><i class="fa fa-youtube"></i></a>
+                    <a target="_blank" href="https://vk.com/morphop"><i class="fa fa-vk"></i></a>
+                    <a target="_blank" href="https://vk.com/itdoctorstudio"><i class="fa fa-vk"></i></a>
+                    <a target="_blank" href="https://instagram.com/ismail_asanovich/"><i class="fa fa-instagram"></i></a>
+                    <a target="_blank" href="https://github.com/morphIsmail"><i class="fa fa-github"></i></a>
+                    <a target="_blank" href="https://twitter.com/ITDoctor_morph"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
         </div>
     </div>
 </body>
