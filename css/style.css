@@ -31,7 +31,7 @@ h1,h2,h3,h4 {
 p {
     text-align: justify;
     margin-bottom: 20px;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 video {
     width: 100%;
@@ -62,11 +62,12 @@ video {
     justify-content: space-between;
 }
 .description__item {
-    width: 25%;
+    width: 32%;
     margin-bottom: 50px;
 }
 .description__icon {
     font-size: 40px;
+    margin-bottom: 10px;
 }
 .description__text {
 
@@ -92,6 +93,22 @@ video {
 /*Что вы узнаете*/
 .about {
     padding-bottom: 20px;
+}
+.about__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about__inner-box {
+    width: 33%;
+    
+}
+.about__inner-box h3 {
+    padding-top: 0;
+    margin: 0 auto 10px;
+}
+ol {
+    list-style-position: inside;
 }
 .about__cards {
     display: flex;
@@ -197,6 +214,13 @@ video {
     }
     .about__item {
         width: 100%;
+    }
+    .about__inner-box {
+        width: 100%;
+    }
+    .about__inner-box h3 {
+        padding-top: 10px;
+        margin-bottom: 10px;
     }
     .learning__inner {
         flex-wrap: wrap;
