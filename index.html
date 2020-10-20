@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видео курс по HTML + CSS</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Видео курс по HTML + CSS</title>
+    <link rel="stylesheet" href="css/media.css">
 </head>
+
 <body>
-    <!-- Шапка -->
-    <div class="header">
+    <header class="header">
         <div class="container">
-            <h1>Видео курс по вёрстке для начинающих (HTML+CSS)</h1>
-            <div class="header__inner">
-                <div class="header__left">
-                    <p>Данный видео курс подойдет начинающим верстальщикам. Если вы хотите изучать создание сайтов и зарабатывать с помощью этого и не знали с чего начать, то этот курс именно для вас. </p>
-                    <p>Так же он подойдет вам если вы уже пытались создавать сайты, но вам кажется, что ваши успехи незначительны. Если вы от 1 до 3 месяцев пытаетесь изучать HTML и CSS, но до сих пор не чувствуете уверенности в себе, то вы так же почерпнете очень много полезно из этого видео курса и после завершения обучения сможете самостоятельно начать верстать сайты.</p> 
-                    <p>Смотрите это короткое видео с примерами работ, которые мы будем выполнять и какие домашние задания у вас будут.</p>
-                </div>
-                <div class="header__right">
-                    <video src="video/trailer.mp4" controls></video>
-                </div>  
-            </div>            
+            <h1 class="header__title">
+                Видео курс по вёрстке для начинающих<br>
+                HTML & CSS
+            </h1>
+            <button class="header__btn-play">
+                <div class="header__btn-play-triangle"></div>
+            </button>
+            <button class="header__btn-buy">
+                Купить
+            </button>
         </div>
-    </div>
-    <!-- Описание -->
-    <div class="description">
+    </header>
+    <section class="description">
         <div class="container">
-            <h2>О курсе</h2>
+            <h2 class="section__title">
+                О курсе
+            </h2>
             <div class="description__cards">
                 <div class="description__item">
                     <i class="description__icon fa fa-list-ol" aria-hidden="true"></i>
@@ -86,130 +88,266 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Процесс обучения -->
-    <div class="learning">
+    </section>
+    <section class="forwhom">
         <div class="container">
-            <h2>Процесс обучения</h2>
+            <h2 class="section__title">
+                Курс для тех, кто
+            </h2>
+            <div class="forwhom__cards">
+                <div class="forwhom__card">
+                    Хочет научиться создавать сайты своими силами
+                </div>
+                <div class="forwhom__card">
+                    Учится использовать современные инструменты разработки
+                </div>
+                <div class="forwhom__card">
+                    Еще не знает язык HTML и CSS, но хочет выучить
+                </div>
+                <div class="forwhom__card">
+                    Хочет стать крутым мастером и зарабатывать деньги
+                </div>
+            </div>
+            <button class="header__btn-buy">
+                Купить
+            </button>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <h2 class="section__title">
+                Программа курса
+            </h2>
+            <div class="about__cards">
+                <div class="about__card">
+                    <h3>Модуль 1<br>(HTML)</h3>
+                    <ul>
+                        <li mytitle="Это краткий обзор того, что мы будем изучать в данном видео курсе.">Введение</li>
+                        <li mytitle="В этом уроке мы установим браузер Google Chrome и редактор кода VS Code.">Установка
+                            браузера и редактора кода</li>
+                        <li mytitle="Рассмотрим функции редактора VS Code и узнаем как с ним работать.">Обзор функций
+                            редактора</li>
+                        <li mytitle="Выучим свои первые HTML теги с помощью которых и создаются любые сайты.">Первые
+                            HTML
+                            теги</li>
+                        <li mytitle="Научимся правильно указывать путь к файлам изображений и другим страницам сайта.">
+                            Как
+                            задавать путь к файлу</li>
+                        <li mytitle="Посмотрим как создавать списки на своем сайте.">Создание списка</li>
+                        <li mytitle="В этом уроке мы рассмотри как создавать таблицы на языке HTML.">Создание таблиц
+                        </li>
+                        <li mytitle="В этом видео уроке мы узнаем как работать с текстом.">Работа с текстом</li>
+                        <li mytitle="Научимся создавать формы для ввода текста, флажки и кнопки.">Создание формы</li>
+                        <li mytitle="Рассмотрим какие есть универсальные атрибуты у каждого HTML тега.">Универсальные
+                            атрибуты</li>
+                        <li mytitle="Научимся работать с RGB цветом и добавлять специальные символы на свой сайт.">Цвет
+                            RGB и спецсимволы</li>
+                    </ul>
+                </div>
+                <div class="about__card">
+                    <h3>Модуль 2<br>(CSS)</h3>
+                    <ul>
+                        <li mytitle="Рассмотрим основные CSS селекторы, узнаем что это такое и зачем они нужны.">CSS
+                            селекторы</li>
+                        <li mytitle="Научимся работать с изображениями на языке CSS.">Работа с изображениями</li>
+                        <li
+                            mytitle="В этом уроке мы научимся создавать границы вокруг любого элемента на сайте и стилизовать их.">
+                            Границы</li>
+                        <li mytitle="Разберемся как изменять размеры элементов на странице с помощью CSS.">Размеры
+                            элементов</li>
+                        <li mytitle="Научимся работать со шрифтами. Установим свой шрифт на сайт.">Работа с шрифтом</li>
+                        <li
+                            mytitle="В этом уроке мы поговорим про блочную модель документа и научимся пользоваться блочной моделью.">
+                            Блочная модель документа</li>
+                        <li
+                            mytitle="Псевдоклассы и псевдоэлементы на языке CSS позволяют расширять основные возможности языка, которые мы уже выучили.">
+                            Псевдоклассы и псевдоэлементы</li>
+                        <li
+                            mytitle="В этом уроке мы изучим базовые приемы Flexbox верстки и будем применять их в следующем модуле.">
+                            CSS Flexbox</li>
+                    </ul>
+                </div>
+                <div class="about__card">
+                    <h3>Модуль 3<br>(Практика)</h3>
+                    <ul>
+                        <li
+                            mytitle="Урок, в котором мы будем верстать фрагмент современного сайта используя все полученные ранее знания.">
+                            Урок по верстке меню сайта</li>
+                        <li mytitle="Домашнее задание для закрепления изученного материала в предыдущем уроке.">Домашнее
+                            задание #1</li>
+                        <li
+                            mytitle="Урок, в котором мы будем верстать фрагмент современного сайта используя все полученные ранее знания.">
+                            Урок по верстке фрагмента сайта</li>
+                        <li mytitle="Домашнее задание для закрепления изученного материала в предыдущем уроке.">Домашнее
+                            задание #2</li>
+                        <li
+                            mytitle="Урок, в котором мы будем верстать фрагмент современного сайта используя все полученные ранее знания.">
+                            Урок по верстке фрагмента сайта</li>
+                        <li mytitle="Домашнее задание для закрепления изученного материала в предыдущем уроке.">Домашнее
+                            задание #3</li>
+                        <li
+                            mytitle="В этом уроке мы рассмотрим графический редактор Photoshop и научимся основным приемам, которые могут пригодиться верстальщику.">
+                            Зачем Photoshop верстальщику</li>
+                        <li
+                            mytitle="Урок, в котором мы будем верстать фрагмент современного сайта используя все полученные ранее знания.">
+                            Урок по верстке фрагмента сайта</li>
+                        <li mytitle="Домашнее задание для закрепления изученного материала в предыдущем уроке.">Домашнее
+                            задание #4</li>
+                        <li
+                            mytitle="Подведение итогов и финальный проект, который вы сможете выполнить самостоятельно и добавить эту работу себе в портфолио.">
+                            Финальный проект-задание</li>
+                        <li mytitle="Вы получите все исходные коды к лекциям этого модуля и домашним заданиям.">Готовый
+                            код всех заданий</li>
+                        <li
+                            mytitle="Я поделюсь с вами полезными материалами, которые будут вам полезны при разработке.">
+                            Дополнительные материалы</li>
+                        <li
+                            mytitle="Большое количество онлайн ресурсов, которые могут помочь при создании сайта, будут вам доступны в удобной форме.">
+                            Ссылки на полезные сайты</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="learning">
+        <div class="container">
+            <h2 class="section__title">
+                Процесс обучения
+            </h2>
             <div class="learning__inner">
                 <div class="learning__icon">
-                    <img src="img/Mockup.png" width="250" alt="">
-                    <!-- <i class="fa fa-telegram" aria-hidden="true"></i> -->
+                    <img src="img/Mockup.png" width="320" alt="">
                 </div>
-                <div class="learning__text">
-                    <p>После покупки видео курс по HTML и CSS будет доступен вам в специальном Телеграм канале. Как только вы перейдете в канал с видео курсом вам нужно перейти в самый верх и начать изучать весь материал в том порядке, в котором он там расположен.</p>
-                    <p>Так же вы будете приглашены в Телеграм группу, где можно будет обсудить свой код с другими участниками.</p>
-                    <p>Я старался делать видео таким образом, чтобы их можно было смотреть даже с мобильного устройства. Но рекомендую использовать Веб версию Телеграм или Desktop приложение. Вам будет намного удобней просматривать видео за своим компьютером или ноутбуком с большим монитором, и вы сможете практиковаться и закреплять изученный материал.</p>
-                    <p>Друзья, курс по HTML+CSS для новичков теперь доступен и на Udemy. К сожалению минимальная цена за курс, которую там можно установить 1799 рублей. Но если вам удобней обучаться на Udemy то можете преобрести курс <a href="https://www.udemy.com/course/itdoctor_html_css/ ">тут</a>.</p> 
-                    <p>Курс в телеграм (вк) стоит в несколько раз дешевле. Тут обучение происходит ничем не хуже, а так как я не зависим от платформы обучения я смог выставить очень низкую цену, специально для Вас, мои любимые зрители канала ITDoctor. Вы получите те же знания, но в разы дешевле. Количество курсов в 2020 ограниченно, так что успейте купить.</p>
-                    <p>Курс доступен и в ВК. После оплаты на этой странице просто напишите мне в ВК, и я открою вам доступ.</p>
+                <div class="learning__text-box">
+                    <div class="learning__text">
+                        Курс по HTML и CSS доступен в специальном Телеграм канале в удобной форме. Так же вы будете
+                        приглашены в Телеграм группу, где можно будет обсудить свой код с другими участниками и задать
+                        свои вопросы.
+                    </div>
+                    <div class="learning__text">
+                        Можно обучаться в специальной группе VK.
+                    </div>
+                    <div class="learning__text">
+                        Также курс доступен и на Udemy. К сожалению, минимальная цена за курс, которую там можно
+                        установить 1799 рублей. Но если вам удобней обучаться на Udemy то можете приобрести курс <a
+                            href="https://www.udemy.com/course/itdoctor_html_css/ ">тут</a>.
+                    </div>
+                    <div class="learning__text">
+                        Курс в Телеграм (VK) стоит 800 рублей - дешевле чем на Udemy. Так как я не зависел от платформы
+                        обучения и смог выставить очень низкую цену, специально для Вас, мои любимые зрители канала
+                        ITDoctor. Вы можете получить те же знания, но в разы дешевле!
+                    </div>
+                    <div class="learning__text">
+                        Я старался делать видео таким образом, чтобы их можно было смотреть даже с мобильного
+                        устройства. Но рекомендую использовать Веб версию Телеграм или Desktop приложение. Вам будет
+                        намного удобней просматривать видео за своим компьютером или ноутбуком с большим монитором.
+                    </div>
+                </div>
+            </div>
+            <button class="header__btn-buy">
+                Купить
+            </button>
+        </div>
+    </section>
+    <section class="author">
+        <div class="container">
+            <h2 class="section__title">
+                Об авторе
+            </h2>
+            <div class="author__inner">
+                <div class="author__img">
+                    <img src="img/author.png" alt="">
+                </div>
+                <div class="author__text">
+                    <h3>Исмаил Усеинов</h3>
+                    <p>Занимаюсь веб-разработкой с 2013 года.</p>
+                    <p>В 2017 году основал обучающий YouTube канал ITDoctor. Делюсь своими знаниями в области
+                        программирования и создания сайтов. Сформировал свою собственную методику обучения, которая
+                        позволяет ученикам максимально эффективно осваивать изучаемый материал.</p>
+                    <p>Обучаю языкам HTML, CSS, JavaScript, PHP, работе с препроцессорами, сборщиками и системой
+                        контроля версий Git, а также многому другому из мира веб-технологий. Уже более тысячи моих
+                        учеников научились создавать сайты самостоятельно и зарабатывать на этом
+                        деньги.</p>
+                    <p>В этом видео курсе я хочу научить вас основам сайтостроения - это языки HTML и CSS. Эти языки
+                        являются основой и знать их должен каждый, кто хочет развиваться в этой области. Вы получите
+                        знания, которые нужны в самом начале пути любого веб-разработчика и будите их использовать на
+                        протяжение всего своего пути. Вся теоретическая информация разложена по полочкам, доступно
+                        объясняется и подкрепляется
+                        практическими заданиями и домашними работами. Курс намерено не содержит лишней информации, тем
+                        самым позволяет лучше освоить материал, который действительно важен.</p>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Что вы узнаете -->
-    <div class="about">
+    </section>
+    <section class="reviews">
         <div class="container">
-            <h2>Содержание</h2>
-            <div class="about__inner">
-                <div class="about__inner-box">
-                    <h3>Модуль 1</h3>
-                    <ol>
-                        <li>Введение</li>
-                        <li>Установка браузера и редактора кода</li>
-                        <li>Обзор функций редактора</li>
-                        <li>Первые HTML теги</li>
-                        <li>Как задавать путь к файлу</li>
-                        <li>Создание списка</li>
-                        <li>Создание таблиц</li>
-                        <li>Работа с текстом</li>
-                        <li>Создание формы</li>
-                        <li>Универсальные атрибуты</li>
-                        <li>Цвет RGB и спецсимволы</li>     
-                    </ol>
-                </div>
-                <div class="about__inner-box">
-                    <h3>Модуль 2</h3>
-                    <ol>
-                        <li>CSS селекторы</li>
-                        <li>Работа с изображениями</li>
-                        <li>Границы</li>
-                        <li>Размеры элементов</li>
-                        <li>Работа с шрифтом</li>
-                        <li>Блочная модель документа</li>
-                        <li>Псевдоклассы и псевдоэлементы</li>
-                        <li>Основы CSS Flexbox</li>
-                    </ol>
-                </div>
-                <div class="about__inner-box">
-                    <h3>Модуль 3</h3>
-                    <ol>
-                        <li>Практический урок + задание 1</li>
-                        <li>Практический урок + задание 2</li>
-                        <li>Практический урок + задание 3</li>
-                        <li>Урок по Photoshop</li>
-                        <li>Практический урок + задание 4</li>
-                        <li>Заключение + финальный проект</li>
-                        <li>Дополнительные материалы</li>
-                        <li>Ссылки на полезные сайты</li>
-                    </ol>
-                </div>
-            </div>
-            <h2>Вы узнаете</h2>
-            <div class="about__cards">
-                <div class="about__item">
-                    <i class="about__icon fa fa-chrome" aria-hidden="true"></i>
-                    <p class="about__text">Базовые приемы работы с инструментами разработчика в браузере Google Chrome.</p>
-                </div>
-                <div class="about__item">
-                    <i class="about__icon fa fa-wrench" aria-hidden="true"></i>
-                    <p class="about__text">Как работать в редакторе кода VS Code и писать код очень быстро с помощью плагина Emmet. Как работать в Photoshop верстальщику.</p> 
-                </div>
-                <div class="about__item">
-                    <i class="about__icon fa fa-html5" aria-hidden="true"></i>
-                    <p class="about__text">Язык HTML. Как настроить путь к файлу стилей, скриптов или изображению. Как создавать таблицы и формы. Какие есть атрибуты у разных тегов. Способы работы с RGB цветом и специальными символами.</p>
-                </div>
-                <div class="about__item">
-                    <i class="about__icon fa fa-css3" aria-hidden="true"></i>
-                    <p class="about__text">Язык CSS. Основные селекторы для поиска элементов на HTML странице. Как работать с изображениями. Что такое блочная модель CSS. Какие есть псевдоклассы и псевдоэлементы. Основы CSS Flexbox. Как подключать шрифты локально. Каким образом создавать градиенты и изменять курсор мыши. Как подключить большой набор иконок к себе на сайт.</p> 
-                </div>
-            </div>   
-        </div>
-    </div>
-    <!-- Купить -->
-    <div class="sale">
-        <div class="container">
-            <h2>Купить курс</h2>
-            <div class="sale__inner">
-                <div class="sale__text">
-                    <p>После того как вы нажмете на кнопку "Перевести", на следующей странице обязательно заполните все поля правильно. Номер телефона тот к которому у вас привязан аккаунт Телеграм, чтобы я смог отправить вам доступ к курсу. А Email и ФИО для возможности связаться с вами если вдруг возникнут какие-то сложности и решить все вопросы. Покупая этот курс, вы получаете возможность обучаться как в Телеграм так и в ВК.</p>
-                    <!-- <p>Цена курса: <span class="del">800 р.</span> 500 р. в сентябре со скидкой!</p> -->
-                    <p>Цена курса: 800 р.</p>
-                </div>
-                <div class="sale__form">
-                    <iframe src="https://money.yandex.ru/quickpay/shop-widget?writer=seller&targets=%D0%92%D0%B8%D0%B4%D0%B5%D0%BE%20%D0%BA%D1%83%D1%80%D1%81%20HTML%2BCSS&targets-hint=&default-sum=800&button-text=11&payment-type-choice=on&fio=on&phone=on&mail=on&hint=&successURL=https%3A%2F%2Fyoutube.com%2Fc%2FITDoctor&quickpay=shop&account=4100110583044988" width="100%" height="222" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
-                </div>
-            </div>        
-        </div>
-    </div>
-    <!-- Подвал -->
-    <div class="footer">
-        <div class="container">
-            <h2>Отзывы</h2>
-            <div class="footer__iiner">
-                <div class="footer__text">
-                    <p>Прочитать отзывы о курсе или оставить свой отзыв можно под видео анонсом на <a target="_blank" href="https://youtu.be/MsDIIZbmsdU">Youtube</a>, в комментариях. Так же в этом видео можно посмотреть первый урок из курса абсолютно бесплатно.</p>
-                </div>
-                <div class="footer__icons">
-                    <a target="_blank" href="https://www.youtube.com/c/ITDoctor"><i class="fa fa-youtube"></i></a>
-                    <a target="_blank" href="https://vk.com/morphop"><i class="fa fa-vk"></i></a>
-                    <a target="_blank" href="https://vk.com/itdoctorstudio"><i class="fa fa-vk"></i></a>
-                    <a target="_blank" href="https://instagram.com/ismail_asanovich/"><i class="fa fa-instagram"></i></a>
-                    <a target="_blank" href="https://github.com/morphIsmail"><i class="fa fa-github"></i></a>
-                    <a target="_blank" href="https://twitter.com/ITDoctor_morph"><i class="fa fa-twitter"></i></a>
+            <h2 class="section__title">
+                Отзывы о курсе
+            </h2>
+            <div class="reviews__inner">
+                <div class="reviews__card">
+                    <img src="img/people2.jpg" width="150" alt="Оксана" class="reviews__img">
+                    <h3 class="reviews__name">Кристина Трибой</h3>
+                    <p class="reviews__text">Исмаил, спасибо Вам большое! Очень толковый курс у Вас получился, обучение
+                        прошло легко и интересно. Узнала много нового, отдельное спасибо за большое количество полезной
+                        информации в конце, очень пригодится в работе и сэкономит много времени. Очень рада, что открыла
+                        для себя Ваш канал. <br><br>Мне есть с чем сравнить, т.к. начала обучение с 0 по книгам и другим
+                        источникам в интернете 6 месяцев назад и уроки на канале ITDoctor могу смело назвать лучшими для
+                        новичков. Пересмотрела уже почти все, они очень качественные, хорошо продуманные, не затянутые.
+                        Автор всегда на связи, отвечает на вопросы, помогает - просто фантастика! ITDoctor - это уже
+                        бренд! С чем Вас, Исмаил и поздравляю!</p>
                 </div>
             </div>
         </div>
+    </section>
+    <section class="bue">
+        <div class="container">
+            <h2 class="section__title">
+                Купить
+            </h2>
+            <div class="buy__inner">
+                <div class="buy__text">
+                    После того как вы нажмете на кнопку "Отправить", на следующей странице обязательно заполните все
+                    поля правильно. Номер телефона тот к которому у вас привязан аккаунт Телеграм (ВК), чтобы я смог
+                    отправить вам доступ к курсу. А Email и ФИО для возможности связаться с вами если вдруг возникнут
+                    какие-то сложности и решить все вопросы. Покупая этот курс, вы получаете возможность обучаться как в
+                    Телеграм, так и в ВК. По любым вопросам о данном курсе можно связаться со мной любым удобным вам
+                    способом.
+                </div>
+                <iframe class="buy__form"
+                    src="https://promo-money.ru/quickpay/shop-widget?writer=seller&targets=%D0%9F%D0%BE%D0%BA%D1%83%D0%BF%D0%BA%D0%B0%20%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%20%D0%BA%D1%83%D1%80%D1%81%D0%B0&targets-hint=&default-sum=800&button-text=12&payment-type-choice=on&mobile-payment-type-choice=on&fio=on&phone=on&mail=on&hint=%D0%92%D1%8B%20%D0%B1%D1%83%D0%B4%D0%B8%D1%82%D0%B5%20%D0%BE%D0%B1%D1%83%D1%87%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%B2%20%D0%A2%D0%B5%D0%BB%D0%B5%D0%B3%D1%80%D0%B0%D0%BC%20%D0%B8%D0%BB%D0%B8%20%D0%92%D0%9A&successURL=https%3A%2F%2Fwww.youtube.com%2Fc%2FITDoctor&quickpay=shop&account=4100110583044988"
+                    height="222" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__icons">
+                <a target="_blank" href="https://www.youtube.com/c/ITDoctor"><i class="fa fa-youtube-play"></i></a>
+                <a target="_blank"
+                    href="mailto:ismail_2016@mail.ru?subject=Вопрос по курсу&body=Здравствуйте, уважаемый ITDoctor,"><i
+                        class="fa fa-envelope"></i></a>
+                <a target="_blank" href="https://t.me/itdoctorstudio"><i class="fa fa-send"></i></a>
+                <a target="_blank" href="https://vk.com/morphop"><i class="fa fa-vk"></i></a>
+                <a target="_blank" href="https://vk.com/itdoctorstudio"><i class="fa fa-vk"></i></a>
+                <a target="_blank" href="https://instagram.com/ismail_asanovich/"><i class="fa fa-instagram"></i></a>
+                <a target="_blank" href="https://www.facebook.com/drinei"><i class="fa fa-facebook"></i></a>
+                <a target="_blank" href="https://twitter.com/ITDoctor_morph"><i class="fa fa-twitter"></i></a>
+                <a target="_blank" href="https://github.com/morphIsmail"><i class="fa fa-github"></i></a>
+
+            </div>
+        </div>
+    </footer>
+    <div id="my_modal" class="modal">
+        <div class="modal_content">
+            <div class="modal_inner">
+                <div class="modal_text">Трейлер видео курса по HTML и CSS</div>
+                <div class="close_modal_window">&times;</div>
+            </div>
+            <video id="video" src="video/trailer.mp4" controls></video>
+        </div>
     </div>
+    <script src="js/main.js"></script>
 </body>
-</html>   
+
+</html>

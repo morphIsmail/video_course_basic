@@ -1,158 +1,312 @@
 * {
     box-sizing: border-box;
+    border: none;
+    outline: none;
     padding: 0;
     margin: 0;
-    font-family: Tahoma;
+    font-family: 'Calibri', sans-serif; 
+    list-style: none;
 }
-body {
-    background-color: #fff;
-    background-image: url(../img/background.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%232a757c' fill-opacity='0.18'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
+button {
+    cursor: pointer;
 }
-a {
-    color: #1b98ff;
-    text-decoration: none;
-    border-bottom: 1px solid #1b98ff;
-    transition: 0.2s;
-}
-a:hover {
-    color: #074ca5;
-    border-bottom-color: transparent;
-}
-h1,h2,h3,h4 {
+section {
+    padding: 100px 0;
     text-align: center;
-    margin-bottom: 40px;
-    padding-top: 40px;
 }
-p {
-    text-align: justify;
-    margin-bottom: 20px;
-    /* margin-right: 20px; */
+.container {
+    width: 1440px;
+    margin: 0 auto;
 }
-video {
-    width: 100%;
-}
-
 /*Шапка*/
 .header {
-    padding-bottom: 20px;
-}
-.header__inner {
-    display: flex;
-    flex-wrap: wrap;
-}
-.header__left {
+    background: url(../img/pattern.png), #05b1b1;
+    background: url(../img/pattern.png), -moz-linear-gradient(left,  #05b1b1 0%, #52339a 100%);
+    background: url(../img/pattern.png), -webkit-linear-gradient(left,  #05b1b1 0%,#52339a 100%);
+    background: url(../img/pattern.png), linear-gradient(to right,  #05b1b1 0%,#52339a 100%);
+    filter: url(../img/pattern.png), progid:DXImageTransform.Microsoft.gradient( startColorstr='#05b1b1', endColorstr='#52339a',GradientType=1 );
+    background-size: contain;
 
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
-.header__right {
+.header__title {
+    color: #fff;
+    font-size: 60px;
+    line-height: 75px;
+    font-weight: 100;
+    letter-spacing: 0.04em;
+}
+.header__btn-play {
+    margin: 30px auto;
+    background-color: #05b1b1;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease;
+}
+.header__btn-play:hover {
+    background-color: #52339a;
+}
+.header__btn-play-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent #ffffff;
+    margin-right: -5px;
+}
+.header__btn-buy {
+    width: 190px;
+    height: 50px;
+    background-color: #52339a;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    transition: 0.2s ease;
+}
+.header__btn-buy:hover {
+    background-color: #05b1b1;
 
 }
 /*О курсе*/
-.description {
-   padding-bottom: 20px;
+.description { 
+    background-color: #f6f5f3;
+}
+.section__title {
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: #05b1b1;
+    text-transform: uppercase;
 }
 .description__cards {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    
 }
 .description__item {
     width: 32%;
     margin-bottom: 50px;
+    
 }
 .description__icon {
+    border: 3px solid #52339a;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    color: #52339a;
     font-size: 40px;
     margin-bottom: 10px;
 }
 .description__text {
-
+    padding-bottom: 15px;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
 }
-
+.description__text:after {
+    content: '';
+    display: block;
+    margin: 15px auto 0;
+    width: 80px;
+    height: 3px;
+    background-color: #05b1b1;
+}
+/*Для кого этот курс*/
+.forwhom .section__title {
+    color: #52339a;
+}
+.forwhom__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.forwhom__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    width: 30%;
+    margin: 5%;
+    border: 3px solid #05b1b1;
+    padding: 30px;
+}
+/*Программа курса*/
+.about { 
+    background-color: #f6f5f3;
+    min-height: 1000px;
+    padding-bottom: 0;
+}
+.about__cards {
+    display: flex;
+    justify-content: space-around;
+}
+.about__card {
+    width: 28%;
+    font-size: 20px;
+    color: #000;
+    
+}
+.about__card h3 {
+    margin-bottom: 15px;
+}
+.about__card ul {
+    text-align: left;
+}
+.about__card ul li {
+    cursor: pointer;
+    padding: 8px;
+}
+.about__card ul li:before {
+    content: '\27A5';
+    margin-right: 5px;
+}
+/*Оформление подсказок*/
+[mytitle]:after {
+    content: '';
+    transition: 0.2s;
+}
+[mytitle]:hover:after {
+    width: 350px;
+    display: block;
+    content: attr(mytitle);
+    background-color: #52339a;
+    color: #fff;
+    padding: 10px;
+    z-index: 100;
+}
 /*Процесс обучения*/
-.learning {
-    padding-bottom: 20px;
-}
 .learning__inner {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 .learning__icon {
     order: 1;
-    font-size: 150px;
     margin-right: 20px;
-    color: #1b98ff;
+    width: 30%;
+}
+.learning__text-box {
+    font-size: 20px;
+    text-align: left;
+    width: 60%;
 }
 .learning__text {
-
-}
-/*Что вы узнаете*/
-.about {
-    padding-bottom: 20px;
-}
-.about__inner {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.about__inner-box {
-    width: 33%;
-    
-}
-.about__inner-box h3 {
-    padding-top: 0;
-    margin: 0 auto 10px;
-}
-ol {
-    list-style-position: inside;
-}
-.about__cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.about__item {
-    text-align: center;
-    width: 40%;
-}
-.about__icon {
-    font-size: 50px;
+    border: 3px solid #05b1b1;
+    padding: 30px;
     margin-bottom: 20px;
 }
-.about__text {
-    text-align: center;
+.learning .section__title {
+    color: #52339a;
 }
-/*Купить курс*/
-.sale {
-    padding-bottom: 20px;
+/*Об авторе*/
+.author {
+    background-color: #f6f5f3;
+    padding-bottom: 0;
 }
-.sale__inner {
+.author__inner {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-around;
 }
-.sale__text {
+.author__img {  
+    align-self: flex-end;
+    width: 30%;
+}
+.author__img img {
+    max-width: 450px;
+}
+.author__text {
+    font-size: 20px;
+    text-align: left;
+    width: 65%;
+}
+.author__text h3 {
+    font-size: 30px;
+}
+.author__text p {
+    margin: 15px 0;
+}
+/*Отзывы о курсе*/
+.reviews  .section__title {
+    color: #52339a;
+}
+.reviews__inner {
+    display: flex;
+    justify-content: space-around;
+}
+.reviews__card {
+    max-width: 500px;
+}
+.reviews__img {
+    border-radius: 50%;
+    border: 4px solid #05b1b1;
+}
+.reviews__name {
+    margin: 15px 0;
+    font-size: 25px;
+}
+.reviews__text {
+    font-size: 20px;
+    text-align: left;
+}
+.reviews__text:after {
+    content: '';
+    display: block;
+    background-color: #52339a;
+    height: 3px;
+    width: 150px;
+    margin: 15px auto 0;
+}
 
+/*Купить курс*/
+.bue {
+    background-color: #f6f5f3;
 }
-.del {
-    color: #a10303;
-    text-decoration: line-through;
+.buy__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-.sale__form {
-    margin: 0 auto;
+.buy__text {
+    max-width: 40%;
+    text-align: left;
+    font-size: 20px;
 }
+.buy__form {
+    width: 400px;
+}
+/*Яндекс форма*/
+
 /*Футер*/
 .footer {
-    padding-bottom: 40px;
+    padding: 50px 0;
+    background: url(../img/pattern.png), #05b1b1;
+    background: url(../img/pattern.png), -moz-linear-gradient(left,  #05b1b1 0%, #52339a 100%);
+    background: url(../img/pattern.png), -webkit-linear-gradient(left,  #05b1b1 0%,#52339a 100%);
+    background: url(../img/pattern.png), linear-gradient(to right,  #05b1b1 0%,#52339a 100%);
+    filter: url(../img/pattern.png), progid:DXImageTransform.Microsoft.gradient( startColorstr='#05b1b1', endColorstr='#52339a',GradientType=1 );
+    background-size: contain;
 }
-.footer__iiner {
-
-}
-.footer__text {
-
+.footer .section__title {
+    text-align: center;
+    color: #fff;
 }
 .footer__icons {
     display: flex;
@@ -161,69 +315,63 @@ ol {
 }
 .footer__icons a {
     font-size: 20px;
-    color: #444;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     text-decoration: none;
-    border: 2px solid #444;
+    /* border: 3px solid #fff; */
     border-radius: 50%;
     margin-right: 10px;
-    transition: 0.3s;
+    transition: 0.2s ease;
 }
 .footer__icons a:last-child {
     margin-right: 0;
 }
 .footer__icons a:hover {
-    background-color: #444;
+    border-color: #52339a;
+    background-color: #52339a;
     color: #fff;
 }
-/*Адаптив*/
-.container {
-    width: 960px;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
+/*Модельное окно*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1000;
 }
-@media screen and (max-width: 769px) {
-    .container {
-        width: 768px;
-    } 
-    .description__item  {
-        width: 50%;
-    }
-    h1,h2,h3,h4 {
-        padding-top: 20px;
-        margin-bottom: 30px;
-    }
-    p {
-        margin-bottom: 15px;
-    }
-    .description__item {
-        margin-bottom: 25px;
-    }
+.modal .modal_content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    z-index: 99999;
 }
-@media screen and (max-width: 376px) {
-    .container {
-        width: 375px;
-    } 
-    .description__item  {
-        width: 100%;
-    }
-    .about__item {
-        width: 100%;
-    }
-    .about__inner-box {
-        width: 100%;
-    }
-    .about__inner-box h3 {
-        padding-top: 10px;
-        margin-bottom: 10px;
-    }
-    .learning__inner {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+.modal .modal_content .close_modal_window {
+    color: #aaa;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.modal_text {
+    font-size: 20px;
+}
+video {
+    width: 100%;
 }
