@@ -1,377 +1,152 @@
-* {
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    padding: 0;
-    margin: 0;
-    font-family: 'Calibri', sans-serif; 
-    list-style: none;
+:root {
+  --color1: #05b1b1;
+  --color2: #52339a;
 }
-button {
-    cursor: pointer;
-}
+
+header,
+footer,
 section {
-    padding: 100px 0;
-    text-align: center;
+  padding: 100px 0;
 }
-.container {
-    width: 1440px;
-    margin: 0 auto;
-}
-/*Шапка*/
-.header {
-    background: url(../img/pattern.png), #05b1b1;
-    background: url(../img/pattern.png), -moz-linear-gradient(left,  #05b1b1 0%, #52339a 100%);
-    background: url(../img/pattern.png), -webkit-linear-gradient(left,  #05b1b1 0%,#52339a 100%);
-    background: url(../img/pattern.png), linear-gradient(to right,  #05b1b1 0%,#52339a 100%);
-    filter: url(../img/pattern.png), progid:DXImageTransform.Microsoft.gradient( startColorstr='#05b1b1', endColorstr='#52339a',GradientType=1 );
-    background-size: contain;
 
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+header {
+  padding: 200px 0;
 }
-.header__title {
-    color: #fff;
-    font-size: 60px;
-    line-height: 75px;
-    font-weight: 100;
-    letter-spacing: 0.04em;
-}
-.header__btn-play {
-    margin: 30px auto;
-    background-color: #05b1b1;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.2s ease;
-}
-.header__btn-play:hover {
-    background-color: #52339a;
-}
-.header__btn-play-triangle {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 10px 0 10px 20px;
-    border-color: transparent transparent transparent #ffffff;
-    margin-right: -5px;
-}
-.header__btn-buy {
-    width: 190px;
-    height: 50px;
-    background-color: #52339a;
-    border-radius: 3px;
-    font-size: 20px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    color: #ffffff;
-    transition: 0.2s ease;
-}
-.header__btn-buy:hover {
-    background-color: #05b1b1;
 
+header, footer {
+  background: url(../img/pattern.png), var(--color1);
+  background: url(../img/pattern.png), -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+  background: url(../img/pattern.png), -webkit-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+  background: url(../img/pattern.png), linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);
+  filter: url(../img/pattern.png), progid:DXImageTransform.Microsoft.gradient(startColorstr=var(--color1), endColorstr=var(--color2), GradientType=1);
+  background-size: contain;
 }
-/*О курсе*/
-.description { 
-    background-color: #f6f5f3;
+
+/* Кнопка Play */
+.itd_play {
+  margin: 30px auto 30px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--color1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
-.section__title {
-    margin-bottom: 40px;
-    font-size: 40px;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    color: #05b1b1;
-    text-transform: uppercase;
+
+.itd_play:hover {
+  background-color: var(--color2);
 }
-.description__cards {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
+
+.itd_triangle {
+  width: 0;
+  height: 0;
+  margin-right: -3px;
+  border-style: solid;
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent var(--bs-white);
 }
-.description__item {
-    width: 32%;
-    margin-bottom: 50px;
-    
+
+.btn-itd {
+  display: block;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 8px 30px;
+  color: var(--bs-white);
+  background-color: var(--color2);
 }
-.description__icon {
-    border: 3px solid #52339a;
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
-    text-align: center;
-    border-radius: 50%;
-    color: #52339a;
-    font-size: 40px;
-    margin-bottom: 10px;
+
+.btn-itd:hover {
+  color: var(--bs-white);
+  background-color: var(--color1);
 }
-.description__text {
-    padding-bottom: 15px;
-    color: #000;
-    font-weight: bold;
-    font-size: 20px;
+
+/* Адаптивное видео */
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
 }
-.description__text:after {
-    content: '';
-    display: block;
-    margin: 15px auto 0;
-    width: 80px;
-    height: 3px;
-    background-color: #05b1b1;
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
-/*Для кого этот курс*/
-.forwhom .section__title {
-    color: #52339a;
+/* О курсе */
+.about, .schedule, .author, .buy {
+  background-color: #eee;
 }
-.forwhom__cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.about i {
+  font-size: 25px;
+  color: var(--color2);
 }
-.forwhom__card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #000;
-    font-weight: bold;
-    font-size: 20px;
-    width: 30%;
-    margin: 5%;
-    border: 3px solid #05b1b1;
-    padding: 30px;
+.itd_circle {
+  margin: 0 auto 15px;
+  width: 70px;
+  height: 70px;
+  border: 3px solid var(--color2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-/*Программа курса*/
-.about { 
-    background-color: #f6f5f3;
-    min-height: 1000px;
-    padding-bottom: 0;
+.line {
+  width: 100px;
+  height: 3px;
+  background-color: var(--color1);
+  margin: 15px auto 30px;
 }
-.about__cards {
-    display: flex;
-    justify-content: space-around;
+/* Для кого курс */
+.forwhom h5 {
+  padding: 50px;
+  border: 3px solid var(--color1);
 }
-.about__card {
-    width: 28%;
-    font-size: 20px;
-    color: #000;
-    
+/* Программа курса */
+.accordion-button:not(.collapsed) {
+  color: var(--bs-black);
+  background-color: var(--bs-white);
 }
-.about__card h3 {
-    margin-bottom: 15px;
+/* Процесс обучния */
+.learning h5 {
+  padding: 25px;
+  border: 3px solid var(--color1);
 }
-.about__card ul {
-    text-align: left;
-}
-.about__card ul li {
-    cursor: pointer;
-    padding: 8px;
-}
-.about__card ul li:before {
-    content: '\27A5';
-    margin-right: 5px;
-}
-/*Оформление подсказок*/
-[mytitle]:after {
-    content: '';
-    transition: 0.2s;
-}
-[mytitle]:hover:after {
-    width: 350px;
-    display: block;
-    content: attr(mytitle);
-    background-color: #52339a;
-    color: #fff;
-    padding: 10px;
-    z-index: 100;
-}
-/*Процесс обучения*/
-.learning__inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.learning__icon {
-    order: 1;
-    margin-right: 20px;
-    width: 30%;
-}
-.learning__text-box {
-    font-size: 20px;
-    text-align: left;
-    width: 60%;
-}
-.learning__text {
-    border: 3px solid #05b1b1;
-    padding: 30px;
-    margin-bottom: 20px;
-}
-.learning .section__title {
-    color: #52339a;
-}
-/*Об авторе*/
+/* Об авторе */
 .author {
-    background-color: #f6f5f3;
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
-.author__inner {
-    display: flex;
-    justify-content: space-around;
+.rounded {
+  border-radius: 50% !important;
+  border: 3px solid var(--color1);
 }
-.author__img {  
-    align-self: flex-end;
-    width: 30%;
+.itd_img {
+  max-width: 260px;
 }
-.author__img img {
-    max-width: 450px;
+/* Отзывы о курсе */
+/* Купить */
+/* Футер */
+footer {
+  padding: 30px 0;
 }
-.author__text {
-    font-size: 20px;
-    text-align: left;
-    width: 65%;
+/* Цвет и фон */
+.color1 {
+  color: var(--color1);
 }
-.author__text h3 {
-    font-size: 30px;
+.bg1 {
+  background-color: var(--color1);
 }
-.author__text p {
-    margin: 15px 0;
+.color2 {
+  color: var(--color2);
 }
-/*Отзывы о курсе*/
-.reviews  .section__title {
-    color: #52339a;
-}
-.reviews__inner {
-    display: flex;
-    justify-content: space-around;
-}
-.reviews__card {
-    max-width: 500px;
-}
-.reviews__img {
-    border-radius: 50%;
-    border: 4px solid #05b1b1;
-}
-.reviews__name {
-    margin: 15px 0;
-    font-size: 25px;
-}
-.reviews__text {
-    font-size: 20px;
-    text-align: left;
-}
-.reviews__text:after {
-    content: '';
-    display: block;
-    background-color: #52339a;
-    height: 3px;
-    width: 150px;
-    margin: 15px auto 0;
-}
-
-/*Купить курс*/
-.bue {
-    background-color: #f6f5f3;
-}
-.buy__inner {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.buy__text {
-    max-width: 40%;
-    text-align: left;
-    font-size: 20px;
-}
-.buy__form {
-    width: 400px;
-}
-/*Яндекс форма*/
-
-/*Футер*/
-.footer {
-    padding: 50px 0;
-    background: url(../img/pattern.png), #05b1b1;
-    background: url(../img/pattern.png), -moz-linear-gradient(left,  #05b1b1 0%, #52339a 100%);
-    background: url(../img/pattern.png), -webkit-linear-gradient(left,  #05b1b1 0%,#52339a 100%);
-    background: url(../img/pattern.png), linear-gradient(to right,  #05b1b1 0%,#52339a 100%);
-    filter: url(../img/pattern.png), progid:DXImageTransform.Microsoft.gradient( startColorstr='#05b1b1', endColorstr='#52339a',GradientType=1 );
-    background-size: contain;
-}
-.footer .section__title {
-    text-align: center;
-    color: #fff;
-}
-.footer__icons {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-.footer__icons a {
-    font-size: 20px;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    text-decoration: none;
-    /* border: 3px solid #fff; */
-    border-radius: 50%;
-    margin-right: 10px;
-    transition: 0.2s ease;
-}
-.footer__icons a:last-child {
-    margin-right: 0;
-}
-.footer__icons a:hover {
-    border-color: #52339a;
-    background-color: #52339a;
-    color: #fff;
-}
-/*Модельное окно*/
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.6);
-    z-index: 1000;
-}
-.modal .modal_content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    z-index: 99999;
-}
-.modal .modal_content .close_modal_window {
-    color: #aaa;
-    float: right;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-}
-.modal_inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 15px;
-}
-.modal_text {
-    font-size: 20px;
-}
-video {
-    width: 100%;
+.bg2 {
+  background-color: var(--color2);
 }
