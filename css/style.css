@@ -82,7 +82,7 @@ header, footer {
   height: 100%;
 }
 /* О курсе */
-.about, .schedule, .author, .buy {
+.about, .schedule, .reviews {
   background-color: #eee;
 }
 .about i {
@@ -137,6 +137,14 @@ header, footer {
 /* Отзывы о курсе */
 /* Купить */
 /* Футер */
+footer .btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
 footer {
   padding: 30px 0;
 }
