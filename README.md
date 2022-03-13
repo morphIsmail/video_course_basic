@@ -9,19 +9,17 @@
 В третьем модуле будут исключительно практические уроки и задания, где вы сможете закрепить всё изученное ранее и пополнить свое портфолио работой, которую создадите в конце курса. Так же в этой главе будет много полезных материалов, которые помогут вам при верстке сайтов.
 
 [Трейлер курса](https://youtu.be/41tdjZWeCH0)  
-[Купить курс](https://www.udemy.com/course/itdoctor_html_css/?referralCode=A2836649F9071CB3F903)
+[Купить курс](https://stepik.org/z/101175)
 
 ### Автору на кофе
 
 Сбер VISA: 4274 3200 3233 1582  
-[Yoomoney](https://yasobe.ru/na/itdoctor)  
-[PayPal](https://paypal.me/itdoctorstudio)
+[Yoomoney](https://yasobe.ru/na/itdoctor)
 
 ### Контакты ITDoctor
 
 [YouTube](https://www.youtube.com/c/ITDoctor)  
 [Telegram](https://t.me/itdoctorstudio) и бот [@itdoctorNavigatorBot](https://t.me/itdoctorNavigatorBot?start)  
-[Курсы на Udemy](https://www.udemy.com/user/useinov-ismail-asanovich/)  
 [GitHub](https://github.com/morphIsmail)  
 [VK](https://vk.com/itdoctorstudio)  
 [Instagram](https://instagram.com/ismail_asanovich)
