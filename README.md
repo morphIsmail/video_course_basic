@@ -8,18 +8,11 @@
 
 В третьем модуле будут исключительно практические уроки и задания, где вы сможете закрепить всё изученное ранее и пополнить свое портфолио работой, которую создадите в конце курса. Так же в этой главе будет много полезных материалов, которые помогут вам при верстке сайтов.
 
-[Трейлер курса](https://youtu.be/41tdjZWeCH0)  
-[Купить курс](https://stepik.org/z/101175)
-
-### Автору на кофе
-
-Сбер VISA: 4274 3200 3233 1582  
-[Yoomoney](https://yasobe.ru/na/itdoctor)
+[Купить курс](https://stepik.org/a/101175)
 
 ### Контакты ITDoctor
 
 [YouTube](https://www.youtube.com/c/ITDoctor)  
 [Telegram](https://t.me/itdoctorstudio) и бот [@itdoctorNavigatorBot](https://t.me/itdoctorNavigatorBot?start)  
 [GitHub](https://github.com/morphIsmail)  
-[VK](https://vk.com/itdoctorstudio)  
-[Instagram](https://instagram.com/ismail_asanovich)
+[VK](https://vk.com/itdoctorstudio)
